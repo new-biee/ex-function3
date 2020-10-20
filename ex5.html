@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    let str = prompt('Nhập tên ngôi sao: ');
+
+
+    function addStr(str) {
+        for (let i = 0; i < stars.length; i++) {
+            if (str === stars[i]) {
+                console.log(stars[i]);
+                console.log(constellation[i]);
+            }
+        }
+    }
+    addStr(str);
+
+</script>
+</body>
+</html>
